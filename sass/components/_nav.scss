@@ -1,0 +1,54 @@
+
+.navigation__link {
+  color: var(--headlines-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+
+  transition-property: color;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+}
+
+
+
+
+.current {
+  color: var(--accent-color);
+  position: relative;
+}
+/* --------dz#5-------- */
+.current::after {
+  content: " ";
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: var(--accent-color);
+  border-radius: 2px;
+}
+
+.navigation__list {
+  margin-left: 93px;
+  display: flex;
+}
+
+.navigation__item {
+  margin-right: 50px;
+}
+.navigation__item:last-child {
+  margin-right: 0px;
+}
+
