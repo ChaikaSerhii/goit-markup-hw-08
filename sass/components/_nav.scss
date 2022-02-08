@@ -1,3 +1,12 @@
+.navigation {
+  display: flex;
+
+  @media screen and (max-width:767.5px) {
+    display: none;
+  }
+}
+
+
 
 .navigation__link {
   color: var(--headlines-color);
@@ -41,7 +50,7 @@
 }
 
 .navigation__list {
-  margin-left: 93px;
+  margin-left: 88px;
   display: flex;
 }
 

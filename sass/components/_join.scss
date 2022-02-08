@@ -1,5 +1,18 @@
 .join {
-  margin-right: 93px;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  margin-top: 60px;
+
+  @media screen and (min-width:768px) {
+    margin-top: 0;
+  }
+    @media screen and (min-width:1200px) {
+    text-align: left;
+    
+    // justify-content: left;
+  }
+
 }
 .join__title {
   font-style: normal;
@@ -12,6 +25,11 @@
 }
 .join__list {
   display: flex;
+  justify-content: center;
+    @media screen and (min-width:1200px) {
+    justify-content: left;
+  }
+
 }
 .join__item + .join__item {
   margin-left: 10px;

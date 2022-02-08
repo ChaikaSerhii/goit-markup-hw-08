@@ -1,21 +1,32 @@
 .portfolio {
-padding-top: 94px;
-padding-bottom: 94px;
-
+padding-top: 60px;
+padding-bottom: 60px;
 }
 
 .filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  @media screen and (min-width:767px) {
+      justify-content: center;
+  // margin-bottom: 30px;
+
+  }
 
 }
 .filter__item {
   margin-right: 8px;
-}
-.filter__item:last-child {
+  margin-bottom: 15px;
+
+  &:last-child {
   margin-right: 0;
+  margin-bottom: 40px;
 }
+
+@media screen and (min-width:767px) {
+  margin-bottom: 30px;
+}
+}
+
 .filter__btn {
   color: var(--headlines-color);
   background-color: var(--btn-color);
