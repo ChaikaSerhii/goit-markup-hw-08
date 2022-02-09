@@ -1,8 +1,9 @@
 .project {
   display: flex;
   flex-wrap: wrap;
+  margin-top: -15px;
   // justify-content: center;
-  margin: -15px;
+  // margin: -15px;
 //   @media screen and (min-width:767px) {
   
 // }
@@ -13,8 +14,9 @@
   background-color: var(--text-white-color);
   border: 1px solid #eeeeee;
   width: 450px;
+  margin-top: 30px;
   // margin-right: 30px;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
   cursor: pointer;
 
   transition-property: box-shadow;

@@ -1,30 +1,41 @@
 .portfolio {
 padding-top: 60px;
 padding-bottom: 60px;
+
+@media screen and (min-width:1200px) {
+    padding-top: 94px;
+
+  padding-bottom: 94px;
+
+}
 }
 
 .filter {
   display: flex;
   flex-wrap: wrap;
+  margin-top: -15px;
+  margin-bottom: 40px;
   @media screen and (min-width:767px) {
       justify-content: center;
-  // margin-bottom: 30px;
-
+  margin-bottom: 30px;
+  }
+  @media screen and (min-width:1200px) {
+    margin-bottom: 50px;
   }
 
 }
 .filter__item {
   margin-right: 8px;
-  margin-bottom: 15px;
+  margin-top: 15px;
 
-  &:last-child {
-  margin-right: 0;
-  margin-bottom: 40px;
-}
 
-@media screen and (min-width:767px) {
-  margin-bottom: 30px;
-}
+  @media screen and (min-width:767px) {
+    margin-bottom: 0;
+  }
+//   &:last-child {
+//   margin-right: 0;
+//   margin-bottom: 40px;
+// }
 }
 
 .filter__btn {
