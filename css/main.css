@@ -33,18 +33,29 @@ ul {
 
 .header {
   border-bottom: 1px solid #ececec;
-  padding-top: 16px;
 }
 
 .header__box {
   align-items: center;
   display: flex;
+  padding-top: 16px;
   padding-bottom: 16px;
+  height: 60px;
 }
 
 @media screen and (min-width: 767px) {
   .header__box {
     padding-bottom: 0;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    height: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__box {
+    padding-top: 24px;
+    padding-bottom: 25px;
   }
 }
 
@@ -53,9 +64,16 @@ ul {
   font-family: "Raleway";
   font-style: normal;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 28px;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 31px;
+  }
 }
 
 .logo__color {
@@ -83,6 +101,7 @@ ul {
 
 .contact__link {
   display: flex;
+  align-items: center;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -110,6 +129,8 @@ ul {
   .contact__link {
     margin-bottom: 0;
     margin-right: 30px;
+    font-size: 14px;
+    line-height: 16px;
   }
 }
 
@@ -308,6 +329,12 @@ ul {
   text-transform: uppercase;
   margin-bottom: 10px;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .features__name {
+    text-align: left;
+  }
 }
 
 .features__description {
@@ -527,6 +554,7 @@ ul {
   .client__title {
     font-size: 36px;
     line-height: 42px;
+    margin-bottom: 50px;
   }
 }
 
@@ -587,10 +615,23 @@ ul {
 .portfolio {
   padding-top: 60px;
   padding-bottom: 60px;
+  width: 480px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio {
+    width: 768px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .portfolio {
+    width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
   }

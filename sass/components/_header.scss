@@ -1,14 +1,28 @@
 .header {
   border-bottom: 1px solid #ececec;
-  padding-top: 16px;
+  // padding-top: 16px;
 }
 .header__box {
   align-items: center;
   display: flex;
-    padding-bottom: 16px;
+    padding-top: 16px;
+  padding-bottom: 16px;
+  height: 60px;
+
+    // padding-bottom: 16px;
 
     @media screen and (min-width:767px) {
-      padding-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 26px;
+
+  padding-bottom: 26px;
+  height: 80px;
+    }
+    @media screen and (min-width:1200px) {
+        padding-top: 24px;
+
+  padding-bottom: 25px;
+
     }
 }
 // .headr-nav {
